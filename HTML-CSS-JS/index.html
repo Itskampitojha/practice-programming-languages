@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Demo</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif; /* 81. font-family */
+            background-color: #f0f0f0; /* 18. background-color */
+            margin: 0; /* 118. margin */
+            padding: 20px; /* 138. padding */
+            color: #333; /* 54. color */
+        }
+
+        /* Container */
+        .container {
+            display: flex; /* 69. display */
+            flex-wrap: wrap; /* 78. flex-wrap */
+            justify-content: center; /* 110. justify-content */
+        }
+
+        /* Box styles */
+        .box {
+            width: 100px; /* 182. width */
+            height: 100px; /* 106. height */
+            margin: 10px; /* 119. margin */
+            background-color: #4CAF50; /* 18. background-color */
+            border: 2px solid #000; /* 23. border */
+            border-radius: 10px; /* 35. border-radius */
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* 49. box-shadow */
+            display: flex; /* 69. display */
+            align-items: center; /* 2. align-items */
+            justify-content: center; /* 110. justify-content */
+            transition: transform 0.2s; /* 172. transition */
+        }
+
+        /* Hover effect */
+        .box:hover {
+            transform: scale(1.1); /* 170. transform */
+            background-color: #45a049; /* 18. background-color */
+        }
+
+        /* Text styles */
+        h1 {
+            text-align: center; /* 156. text-align */
+            margin-bottom: 20px; /* 119. margin */
+            font-size: 24px; /* 84. font-size */
+            text-shadow: 1px 1px 2px #ccc; /* 165. text-shadow */
+        }
+
+        p {
+            text-align: justify; /* 156. text-align */
+            line-height: 1.5; /* 115. line-height */
+            margin: 10px 0; /* 119. margin */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .box {
+                width: 80px; /* 182. width */
+                height: 80px; /* 106. height */
+            }
+        }
+
+        /* Additional properties demonstration */
+        .demo {
+            margin-top: 40px; /* 119. margin */
+            padding: 20px; /* 138. padding */
+            border: 1px solid #ccc; /* 23. border */
+            background-color: #fff; /* 18. background-color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 49. box-shadow */
+        }
+
+        /* Various CSS properties in action */
+        .properties {
+            display: grid; /* 69. display */
+            grid-template-columns: repeat(4, 1fr); /* 104. grid-template-columns */
+            gap: 10px; /* 90. gap */
+        }
+
+        .property {
+            border: 1px solid #ddd; /* 23. border */
+            padding: 10px; /* 138. padding */
+            text-align: center; /* 156. text-align */
+            background-color: #f9f9f9; /* 18. background-color */
+            transition: background-color 0.3s; /* 172. transition */
+        }
+
+        .property:hover {
+            background-color: #e0e0e0; /* 18. background-color */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Properties Demo</h1>
+    <p>This page demonstrates various CSS properties applied to different elements.</p>
+
+    <div class="container">
+         Box elements demonstrating various CSS properties 
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+
+    <div class="demo">
+        <h2>CSS Properties in Action</h2>
+        <div class="properties">
+            <div class="property">align-content</div> <!-- 1 -->
+            <div class="property">align-items</div> <!-- 2 -->
+            <div class="property">align-self</div> <!-- 3 -->
+            <div class="property">all</div> <!-- 4 -->
+            <div class="property">animation</div> <!-- 5 -->
+            <div class="property">animation-delay</div> <!-- 6 -->
+            <div class="property">animation-direction</div> <!-- 7 -->
+            <div class="property">animation-duration</div> <!-- 8 -->
+            <div class="property">animation-fill-mode</div> <!-- 9 -->
+            <div class="property">animation-iteration-count</div> <!-- 10 -->
+            <div class="property">animation-name</div> <!-- 11 -->
+            <div class="property">animation-play-state</div> <!-- 12 -->
+            <div class="property">animation-timing-function</div> <!-- 13 -->
+            <div class="property">backdrop-filter</div> <!-- 14 -->
+            <div class="property">background</div> <!-- 15 -->
+            <div class="property">background-attachment</div> <!-- 16 -->
+            <div class="property">background-blend-mode</div> <!-- 17 -->
+            <div class="property">background-color</div> <!-- 18 -->
+            <div class="property">background-image</div> <!-- 19 -->
+            <div class="property">background-position</div> <!-- 20 -->
+            <div class="property">background-repeat</div> <!-- 21 -->
+            <div class="property">background-size</div> <!-- 22 -->
+            <div class="property">border</div> <!-- 23 -->
+            <div class="property">border-bottom</div> <!-- 24 -->
+            <div class="property">border-bottom-color</div> <!-- 25 -->
+            <div class="property">border-bottom-left-radius</div> <!-- 26 -->
+            <div class="property">border-bottom-right-radius</div> <!-- 27 -->
+            <div class="property">border-bottom-style</div> <!-- 28 -->
+            <div class="property">border-bottom-width</div> <!-- 29 -->
+            <div class="property">border-color</div> <!-- 30 -->
+            <div class="property">border-left</div> <!-- 31 -->
+            <div class="property">border-left-color</div> <!-- 32 -->
+            <div class="property">border-left-style</div> <!-- 33 -->
+            <div class="property">border-left-width</div> <!-- 34 -->
+            <div class="property">border-radius</div> <!-- 35 -->
+            <div class="property">border-right</div> <!-- 36 -->
+            <div class="property">border-right-color</div> <!-- 37 -->
+            <div class="property">border-right-style</div> <!-- 38 -->
+            <div class="property">border-right-width</div> <!-- 39 -->
+            <div class="property">border-style</div> <!-- 40 -->
+            <div class="property">border-top</div> <!-- 41 -->
+            <div class="property">border-top-color</div> <!-- 42 -->
+            <div class="property">border-top-left-radius</div> <!-- 43 -->
+            <div class="property">border-top-right-radius</div> <!-- 44 -->
+            <div class="property">border-top-style</div> <!-- 45 -->
+            <div class="property">border-top-width</div> <!-- 46 -->
+            <div class="property">border-width</div> <!-- 47 -->
+            <div class="property">bottom</div> <!-- 48 -->
+            <div class="property">box-shadow</div> <!-- 49 -->
+            <div class="property">box-sizing</div> <!-- 50 -->
+            <div class="property">caption-side</div> <!-- 51 -->
+            <div class="property">clear</div> <!-- 52 -->
+            <div class="property">clip</div> <!-- 53 -->
+            <div class="property">color</div> <!-- 54 -->
+            <div class="property">column-count</div> <!-- 55 -->
+            <div class="property">column-fill</div> <!-- 56 -->
+            <div class="property">column-gap</div> <!-- 57 -->
+            <div class="property">column-rule</div> <!-- 58 -->
+            <div class="property">column-rule-color</div> <!-- 59 -->
+            <div class="property">column-rule-style</div> <!-- 60 -->
+            <div class="property">column-rule-width</div> <!-- 61 -->
+            <div class="property">column-span</div> <!-- 62 -->
+            <div class="property">column-width</div> <!-- 63 -->
+            <div class="property">content</div> <!-- 64 -->
+            <div class="property">counter-increment</div> <!-- 65 -->
+            <div class="property">counter-reset</div> <!-- 66 -->
+            <div class="property">cursor</div> <!-- 67 -->
+            <div class="property">direction</div> <!-- 68 -->
+            <div class="property">display</div> <!-- 69 -->
+            <div class="property">empty-cells</div> <!-- 70 -->
+            <div class="property">filter</div> <!-- 71 -->
+            <div class="property">flex</div> <!-- 72 -->
+            <div class="property">flex-basis</div> <!-- 73 -->
+            <div class="property">flex-direction</div> <!-- 74 -->
+            <div class="property">flex-flow</div> <!-- 75 -->
+            <div class="property">flex-grow</div> <!-- 76 -->
+            <div class="property">flex-shrink</div> <!-- 77 -->
+            <div class="property">flex-wrap</div> <!-- 78 -->
+            <div class="property">float</div> <!-- 79 -->
+            <div class="property">font</div> <!-- 80 -->
+            <div class="property">font-family</div> <!-- 81 -->
+            <div class="property">font-kerning</div> <!-- 82 -->
+            <div class="property">font-size</div> <!-- 83 -->
+            <div class="property">font-size-adjust</div> <!-- 84 -->
+            <div class="property">font-stretch</div> <!-- 85 -->
+            <div class="property">font-style</div> <!-- 86 -->
+            <div class="property">font-variant</div> <!-- 87 -->
+            <div class="property">font-weight</div> <!-- 88 -->
+            <div class="property">gap</div> <!-- 90 -->
+            <div class="property">grid</div> <!-- 91 -->
+            <div class="property">grid-area</div> <!-- 92 -->
+            <div class="property">grid-auto-columns</div> <!-- 93 -->
+            <div class="property">grid-auto-flow</div> <!-- 94 -->
+            <div class="property">grid-auto-rows</div> <!-- 95 -->
+            <div class="property">grid-column</div> <!-- 96 -->
+            <div class="property">grid-column-end</div> <!-- 97 -->
+            <div class="property">grid-column-start</div> <!-- 98 -->
+            <div class="property">grid-row</div> <!-- 99 -->
+            <div class="property">grid-row-end</div> <!-- 100 -->
+            <div class="property">grid-row-start</div> <!-- 101 -->
+            <div class="property">grid-template-areas</div> <!-- 102 -->
+            <div class="property">grid-template-columns</div> <!-- 103 -->
+            <div class="property">grid-template-rows</div> <!-- 104 -->
+            <div class="property">height</div> <!-- 106 -->
+            <div class="property">hyphens</div> <!-- 107 -->
+            <div class="property">image-rendering</div> <!-- 108 -->
+            <div class="property">inline-size</div> <!-- 109 -->
+            <div class="property">justify-content</div> <!-- 110 -->
+            <div class="property">justify-items</div> <!-- 111 -->
+            <div class="property">justify-self</div> <!-- 112 -->
+            <div class="property">left</div> <!-- 113 -->
+            <div class="property">letter-spacing</div> <!-- 114 -->
+            <div class="property">line-height</div> <!-- 115 -->
+            <div class="property">list-style</div> <!-- 116 -->
+            <div class="property">list-style-type</div> <!-- 117 -->
+            <div class="property">margin</div> <!-- 118 -->
+            <div class="property">margin-bottom</div> <!-- 119 -->
+            <div class="property">margin-left</div> <!-- 120 -->
+            <div class="property">margin-right</div> <!-- 121 -->
+            <div class="property">margin-top</div> <!-- 122 -->
+            <div class="property">mask</div> <!-- 123 -->
+            <div class="property">max-height</div> <!-- 124 -->
+            <div class="property">max-width</div> <!-- 125 -->
+            <div class="property">min-height</div> <!-- 126 -->
+            <div class="property">min-width</div> <!-- 127 -->
+            <div class="property">mix-blend-mode</div> <!-- 128 -->
+            <div class="property">object-fit</div> <!-- 129 -->
+            <div class="property">object-position</div> <!-- 130 -->
+            <div class="property">opacity</div> <!-- 131 -->
+            <div class="property">order</div> <!-- 132 -->
+            <div class="property">overflow</div> <!-- 133 -->
+            <div class="property">overflow-x</div> <!-- 134 -->
+            <div class="property">overflow-y</div> <!-- 135 -->
+            <div class="property">padding</div> <!-- 138 -->
+            <div class="property">padding-bottom</div> <!-- 139 -->
+            <div class="property">padding-left</div> <!-- 140 -->
+            <div class="property">padding-right</div> <!-- 141 -->
+            <div class="property">padding-top</div> <!-- 142 -->
+            <div class="property">page-break-after</div> <!-- 143 -->
+            <div class="property">page-break-before</div> <!-- 144 -->
+            <div class="property">page-break-inside</div> <!-- 145 -->
+            <div class="property">perspective</div> <!-- 146 -->
+            <div class="property">perspective-origin</div> <!-- 147 -->
+            <div class="property">pointer-events</div> <!-- 148 -->
+            <div class="property">position</div> <!-- 149 -->
+            <div class="property">quotes</div> <!-- 150 -->
+            <div class="property">resize</div> <!-- 151 -->
+            <div class="property">right</div> <!-- 152 -->
+            <div class="property">rotate</div> <!-- 153 -->
+            <div class="property">row-gap</div> <!-- 154 -->
+            <div class="property">scale</div> <!-- 155 -->
+            <div class="property">text-align</div> <!-- 156 -->
+            <div class="property">text-decoration</div> <!-- 157 -->
+            <div class="property">text-decoration-color</div> <!-- 158 -->
+            <div class="property">text-decoration-line</div> <!-- 159 -->
+            <div class="property">text-decoration-style</div> <!-- 160 -->
+            <div class="property">text-indent</div> <!-- 161 -->
+            <div class="property">text-overflow</div> <!-- 162 -->
+            <div class="property">text-transform</div> <!-- 163 -->
+            <div class="property">transform</div> <!-- 170 -->
+            <div class="property">transform-origin</div> <!-- 171 -->
+            <div class="property">transition</div> <!-- 172 -->
+            <div class="property">transition-delay</div> <!-- 173 -->
+            <div class="property">transition-duration</div> <!-- 174 -->
+            <div class="property">transition-property</div> <!-- 175 -->
+            <div class="property">transition-timing-function</div> <!-- 176 -->
+            <div class="property">vertical-align</div> <!-- 177 -->
+            <div class="property">visibility</div> <!-- 178 -->
+            <div class="property">white-space</div> <!-- 179 -->
+            <div class="property">width</div> <!-- 182 -->
+            <div class="property">word-spacing</div> <!-- 183 -->
+            <div class="property">z-index</div> <!-- 184 -->
+        </div>
+    </div>
+
+    <p>Resize the window to see the responsive design in action!</p>
+</body>
+</html>
+
+
