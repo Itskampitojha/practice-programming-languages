@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 10px; /* Space between squares */
+    width: 60%; /* Set the width of the container */
+}
+
+.square {
+    width: 100px; /* Width of each square */
+    height: 100px; /* Height of each square */
+    border: 2px solid #333; /* Black border */
+}
+
+.static {
+    background-color: #4CAF50; /* Green color */
+}
+
+.relative {
+    background-color: #2196F3; /* Blue color */
+    position: relative; /* Set position to relative */
+    top: 10px; /* Move down 10px */
+}
+
+.absolute {
+    background-color: #FF5722; /* Orange color */
+    position: absolute; /* Set position to absolute */
+    top: 0; /* Position it at the top of the container */
+    left: 0; /* Position it at the left of the container */
+    z-index: 1; /* Stack above other squares */
+}
+
+.square:hover {
+    opacity: 0.8; /* Slightly change opacity on hover */
+}

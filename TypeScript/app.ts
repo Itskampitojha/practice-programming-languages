@@ -37,5 +37,24 @@ let arr = [];
 [1,2,3,4,5,6 ]
 
 
+let a :null;
+
+
+
+
+
+a = "harsh"
+
+let a : undefined;
+
+//type inference
+
+let a : number | boolean | 
+
+
+
+function abcd(a: number, b: string): void {
+    b.concat = 12; b++;
+}
 
 
