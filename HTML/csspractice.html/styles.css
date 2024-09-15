@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif; /* Body ka font style */
+    background-color: #f4f4f4; /* Background color */
+}
+
+.container {
+    width: 80%; /* Container ka width */
+    margin: auto; /* Centering */
+    padding: 20px; /* Padding around the container */
+    background: white; /* Container ka background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+h1 {
+    text-align: center; /* Heading ka alignment */
+    color: #2c3e50; /* Heading color */
+}
+
+h2 {
+    border-bottom: 2px solid #3498db; /* Sub-heading ka underline */
+    padding-bottom: 5px; /* Padding below sub-heading */
+    margin-bottom: 10px; /* Margin below sub-heading */
+}

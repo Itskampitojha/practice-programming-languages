@@ -1,0 +1,12 @@
+h1 {
+    transition: color 0.5s ease; /* Smooth transition for color change */
+  }
+  
+  .john {
+    color: blue; /* Color for John */
+  }
+  
+  .doe {
+    color: green; /* Color for Doe */
+  }
+  
