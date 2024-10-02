@@ -112,3 +112,56 @@ console.log('3. Improving code readability for complex async logic');
 console.log('4. Error handling in asynchronous code');
 console.log('5. Avoiding callback hell in nested asynchronous operations');
 
+// 5. Mapping over an array of user data to create a list of user cards in React
+console.log('\n5. Mapping over user data to create user cards in React:');
+
+// This is a React component, typically in a separate file
+const UserCard = ({ user }) => (
+  <div className="user-card" key={user.id}>
+    <h3>{user.name}</h3>
+    <p>Email: {user.email}</p>
+  </div>
+);
+
+// This would be in your main component file
+const UserList = () => {
+  const userData = [
+    { id: 1, name: 'Alice', email: 'alice@example.com' },
+    { id: 2, name: 'Bob', email: 'bob@example.com' },
+    { id: 3, name: 'Charlie', email: 'charlie@example.com' }
+  ];
+
+  return (
+    <div className="user-list">
+      {userData.map(user => (
+        <UserCard user={user} key={user.id} />
+      ))}
+    </div>
+  );
+};
+
+console.log('React component for rendering user cards created.');
+console.log('To use: <UserList />');
+
+
+// Grouping an array of objects by a specific property
+console.log('\n6. Grouping an array of objects by a specific property:');
+
+const people = [
+  { name: 'Alice', age: 30, city: 'New York' },
+  { name: 'Bob', age: 25, city: 'Los Angeles' },
+  { name: 'Charlie', age: 35, city: 'New York' },
+  { name: 'David', age: 28, city: 'Los Angeles' },
+  { name: 'Eve', age: 32, city: 'Chicago' }
+];
+
+const groupByCity = people.reduce((acc, person) => {
+  const { city } = person;
+  acc[city] = acc[city] || [];
+  acc[city].push(person);
+  return acc;
+}, {});
+
+console.log('Grouped by city:', groupByCity);
+
+
