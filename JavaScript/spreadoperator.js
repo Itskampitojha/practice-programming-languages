@@ -165,3 +165,5 @@ const groupByCity = people.reduce((acc, person) => {
 console.log('Grouped by city:', groupByCity);
 
 
+
+
